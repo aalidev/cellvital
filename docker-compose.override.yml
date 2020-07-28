@@ -1,0 +1,45 @@
+#override defaults for dev
+version: "3.7"
+
+services:
+  app_server:
+    image: shopware/development:local
+    build:
+      context: dev-ops/docker/containers/app
+      args:
+        USER_ID: 1000
+        GROUP_ID: 1000
+    volumes:
+      - .:/app
+      - ~/.npm:/.npm
+    environment:
+      CONTAINER_UID: 1000
+      APPLICATION_UID: 1000
+      APPLICATION_GID: 1000
+    ports:
+      - "127.0.0.1:8000:8000"
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:8005:8005"
+      - "127.0.0.1:9998:9998"
+      - "127.0.0.1:9999:9999"
+
+  app_mysql:
+    ports:
+      - "127.0.0.1:4406:3306"
+    volumes:
+      - ./dev-ops/docker/_volumes/mysql:/mysql-data
+
+  adminer:
+    ports:
+      - "127.0.0.1:8001:8080"
+
+  mailhog:
+    ports:
+      - "127.0.0.1:8002:8025"
+
+  elasticsearch:
+    ports:
+      - "127.0.0.1:9200:9200"
+      - "127.0.0.1:9300:9300"
+
+

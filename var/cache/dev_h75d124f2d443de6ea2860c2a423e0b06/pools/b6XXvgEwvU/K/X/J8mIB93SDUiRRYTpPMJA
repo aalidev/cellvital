@@ -1,0 +1,149 @@
+<?php //%255BShopware%255CCore%255CContent%255CProduct%255CSalesChannel%255CSuggest%255CProductSuggestRoute%2523load%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'path' => [
+                '/search-suggest',
+            ],
+            'tags' => [
+                [
+                    'Store API',
+                    'Search',
+                ],
+            ],
+            'description' => [
+                'Search suggests',
+                'Search term',
+                5 => 'Found products',
+            ],
+            'operationId' => [
+                'searchSuggest',
+            ],
+            'parameters' => [
+                [
+                    $o[1],
+                ],
+            ],
+            'responses' => [
+                [
+                    $o[5],
+                ],
+            ],
+            '_context' => [
+                $o[9],
+                $o[4],
+                $o[3],
+                5 => $o[6],
+                7 => $o[8],
+            ],
+            'name' => [
+                1 => 'search',
+            ],
+            'in' => [
+                1 => 'query',
+            ],
+            'schema' => [
+                1 => $o[2],
+            ],
+            'type' => [
+                2 => 'string',
+            ],
+            'filename' => [
+                3 => '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 825,
+                825,
+                6 => 825,
+                8 => 825,
+                825,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                'Annotation',
+                6 => 'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                'DocParser',
+                6 => 'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                [
+                    $o[1],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[0],
+                ],
+            ],
+            'response' => [
+                5 => '200',
+            ],
+            '_unmerged' => [
+                5 => [
+                    $o[7],
+                ],
+            ],
+            'ref' => [
+                7 => '#/definitions/ProductListingResult',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                10 => '/store-api/v{version}/search-suggest',
+            ],
+            'name' => [
+                10 => 'store-api.search.suggest',
+            ],
+            'methods' => [
+                10 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[10],
+    ],
+    []
+); }];

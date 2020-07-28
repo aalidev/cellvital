@@ -1,0 +1,129 @@
+<?php //%255BShopware%255CCore%255CSystem%255CCurrency%255CSalesChannel%255CCurrencyRoute%2523load%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'path' => [
+                '/currency',
+            ],
+            'tags' => [
+                [
+                    'Store API',
+                    'Currency',
+                ],
+            ],
+            'description' => [
+                'Loads all available currency',
+                3 => 'All available currency',
+            ],
+            'operationId' => [
+                'readCurrency',
+            ],
+            'parameters' => [
+                [
+                    $o[1],
+                ],
+            ],
+            'responses' => [
+                [
+                    $o[3],
+                ],
+            ],
+            '_context' => [
+                $o[7],
+                $o[2],
+                3 => $o[4],
+                5 => $o[6],
+            ],
+            'name' => [
+                1 => 'Api-Basic-Parameters',
+            ],
+            'filename' => [
+                2 => '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                4 => '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/var/www/html/sw6/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                2 => 825,
+                4 => 825,
+                6 => 825,
+                825,
+            ],
+            'method' => [
+                2 => 'Annotation',
+                4 => 'Annotation',
+                6 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                2 => 'DocParser',
+                4 => 'DocParser',
+                6 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                2 => 'Doctrine\\Common\\Annotations',
+                4 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                2 => [
+                    $o[1],
+                ],
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                [
+                    $o[0],
+                ],
+            ],
+            'response' => [
+                3 => '200',
+            ],
+            '_unmerged' => [
+                3 => [
+                    $o[5],
+                ],
+            ],
+            'ref' => [
+                5 => '#/components/schemas/currency_flat',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                8 => '/store-api/v{version}/currency',
+            ],
+            'name' => [
+                8 => 'store-api.currency',
+            ],
+            'methods' => [
+                8 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[8],
+    ],
+    []
+); }];

@@ -1,0 +1,22 @@
+{
+    "padreazul-theme": {
+        "footer": {
+            "newsletterHeading": "Verpassen Sie niemals einen Padre-Moment",
+            "explore": "Erkunden",
+            "about": "Über Pater Azul",
+            "production": "Produktion",
+            "blog": "Blog",
+            "haveQuestions": "Habe Fragen?",
+            "clickTheLink": "Klicken Sie auf den Link unten, um häufig gestellte Fragen zu finden, Kundenunterstützung zu erhalten und vieles mehr!",
+            "faq": "FAQ & Support",
+            "privacyPolicy": "Datenschutz-Bestimmungen",
+            "termsAndConditions": "Terms & Bedingungen"
+        },
+        "product": {
+            "packageInfo": "Paketinfo",
+            "weight": "Gewicht",
+            "dimensions": "Maße",
+            "selectSize": "Wähle die Größe"
+        }
+    }
+}

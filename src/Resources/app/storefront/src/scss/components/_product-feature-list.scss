@@ -1,0 +1,46 @@
+.pa-product-feature-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 16px 0;
+
+    li {
+        background: url('/bundles/padreazultheme/ramon-list-bullet.png') no-repeat;
+        background-position: 16px 16px;
+        background-size: 20px 28px;
+        border-radius: 8px;
+        color: #888;
+        font-size: 14px;
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 16px 16px 16px 64px;
+
+        strong {
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        &:hover {
+            background: url('/bundles/padreazultheme/ramon-list-bullet.png') no-repeat #FFF;
+            background-position: 16px 16px;
+            background-size: 20px 28px;
+            box-shadow: 0 0 16px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .pa-product-feature-list {
+        flex-direction: column;
+    }
+}

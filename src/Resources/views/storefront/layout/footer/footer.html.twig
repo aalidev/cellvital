@@ -1,0 +1,28 @@
+{% sw_extends "@Storefront/storefront/layout/footer/footer.html.twig" %}
+
+{% block layout_footer_inner_container %}
+    <div class="footer-top row">
+        <div class="col-md-5">
+            <h4>{{ 'padreazul-theme.footer.newsletterHeading' | trans }}</h4>
+        </div>
+        <div class="col-md-3">
+            <h4>{{ 'padreazul-theme.footer.explore' | trans }}</h4>
+            <a>{{ 'padreazul-theme.footer.about' | trans }}</a>
+            <a>{{ 'padreazul-theme.footer.production' | trans }}</a>
+            <a>{{ 'padreazul-theme.footer.blog' | trans }}</a>
+        </div>
+        <div class="col-md-4">
+            <h4>{{ 'padreazul-theme.footer.haveQuestions' | trans }}</h4>
+            <p>
+                {{ 'padreazul-theme.footer.clickTheLink' | trans }}
+            </p>
+            <h4>{{ 'padreazul-theme.footer.faq' | trans }}</h4>
+            <a class="mail-link">info@padreazul.com</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2020 Padre azul Tequila
+        <a>{{ 'padreazul-theme.footer.privacyPolicy' | trans }}</a>
+        <a>{{ 'padreazul-theme.footer.termsAndConditions' | trans }}</a>
+    </div>
+{% endblock %}

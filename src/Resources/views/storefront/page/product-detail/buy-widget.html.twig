@@ -1,0 +1,20 @@
+{% sw_extends "@Storefront/storefront/page/product-detail/buy-widget.html.twig" %}
+
+{% block page_product_detail_buy_form %}
+
+    <div class="product-detail-description-text"
+         itemprop="description">
+        {{ page.product.translated.description|raw }}
+    </div>
+
+    {% block page_product_detail_ordernumber_container %}
+    {% endblock %}
+
+    {{ parent() }}
+
+    <div class="product-detail-package-info">
+        {{ 'padreazul-theme.product.packageInfo' | trans }}:
+        {{ 'padreazul-theme.product.weight' | trans }} {{ page.product.weight }}kg,
+        {{ 'padreazul-theme.product.dimensions' | trans }} {{ page.product.height/10 }}x{{ page.product.width/10 }}x{{ page.product.length/10 }}cm
+    </div>
+{% endblock %}

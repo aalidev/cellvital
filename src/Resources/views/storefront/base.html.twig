@@ -1,0 +1,42 @@
+{% sw_extends "@Storefront/storefront/base.html.twig" %}
+
+{% block base_head %}
+    {{ parent() }}
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MVR4RSW');</script>
+    <!-- End Google Tag Manager -->
+{% endblock %}
+
+{% block base_body_inner %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVR4RSW"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {{ parent() }}
+{% endblock %}
+
+{% block base_header %}
+    {% sw_include '@Storefront/storefront/layout/header/top-bar.html.twig' %}
+    {% sw_include '@Storefront/storefront/layout/header/header.html.twig' %}
+{% endblock %}
+
+{% block base_navigation %}
+{% endblock %}
+
+{% block base_main_container %}
+    <div class="container-main">
+        {% block base_breadcrumb %}
+            {% if breadcrumbList %}
+                {% sw_include '@Storefront/storefront/layout/breadcrumb.html.twig' %}
+            {% endif %}
+        {% endblock %}
+
+        {% block base_content %}{% endblock %}
+    </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+#thinkly-subshop-switch-modal {
+    .modal-body {
+        padding: 24px 24px 0;
+
+        h4 {
+            font-family: $sw-font-family-headline;
+            font-size: 16px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .thinkly-subshop-switch-list {
+            border: none;
+            margin: 0;
+        }
+
+        .thinkly-subshop-switch-list-item {
+            border: none;
+
+            strong {
+                font: normal 14px $sw-font-family-base;
+            }
+
+            img {
+                margin-right: 16px;
+            }
+
+            h6 {
+                color: transparentize($sw-text-color, 0.4);
+                font: normal 14px $sw-font-family-base;
+            }
+
+            .thiknly-subshop-switch-list-item-description {
+                color: transparentize($sw-text-color, 0.5);
+                font: normal 12px $sw-font-family-base;
+                margin: 8px 0;
+            }
+
+            .btn-group {
+                .btn-secondary {
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    color: $sw-color-brand-primary;
+                    font: bold 12px $sw-font-family-base;
+                    padding: 8px 16px;
+
+                    &.active {
+                        background: transparentize($sw-color-brand-primary, 0.75);
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            input {
+                color: $sw-color-brand-primary;
+            }
+        }
+    }
+
+    .modal-footer {
+        border: none;
+        padding: 8px 24px 24px;
+
+        #thinkly-subshop-switch-modal-submit {
+            background: $sw-color-brand-primary;
+            border: none;
+        }
+
+        a {
+            color: $sw-color-brand-primary;
+            font: bold 16px $sw-font-family-headline;
+        }
+    }
+}

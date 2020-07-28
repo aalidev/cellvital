@@ -1,0 +1,9 @@
+{% sw_extends "@Storefront/storefront/component/product/breadcrumb.html.twig" %}
+
+{% block component_product_breadcrumb %}
+    <a class="btn btn-back" href="{{ path('frontend.home.page') }}">
+        {% block component_product_breadcrumb_link_name %}
+            <i class="arrow-left icon"></i> Go Back
+        {% endblock %}
+    </a>
+{% endblock %}

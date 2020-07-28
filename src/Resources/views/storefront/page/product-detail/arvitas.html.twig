@@ -1,0 +1,34 @@
+{% if page.product.customFields.custom_arvitas_enabled %}
+    <div class="product-detail-arvitas">
+        <div class="product-detail-arvitas-header">
+            <img src="{{ asset('/bundles/padreazul/awards.png') }}" />
+            100% Natural ingerdients
+        </div>
+
+        <ul>
+            <li data-target="visual">
+                <strong>Visual</strong>
+                {{ page.product.customFields.custom_arvitas_visual_text }}
+            </li>
+            <li data-target="aromatic">
+                <strong>Aromatic</strong>
+                {{ page.product.customFields.custom_arvitas_aromatic_text }}
+            </li>
+            <li data-target="taste">
+                <strong>Taste</strong>
+                {{ page.product.customFields.custom_arvitas_taste_text }}
+            </li>
+        </ul>
+
+        <div class="product-detail-measures">
+            <div class="product-detail-value-badge">
+                <label>Weight</label>
+                {{ page.product.weight }}kg
+            </div>
+            <div class="product-detail-value-badge">
+                <label>Size</label>
+                {{ page.product.height }} x {{ page.product.width }} x {{ page.product.length }}
+            </div>
+        </div>
+    </div>
+{% endif %}

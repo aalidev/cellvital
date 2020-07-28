@@ -1,0 +1,69 @@
+.thinkly-age-verification-popup {
+    background: #121212;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+
+    .thinkly-age-verification-popup-logo {
+        display: none;
+    }
+
+    .thinkly-age-verification-popup-message {
+        strong {
+            color: $sw-color-brand-primary;
+            font-weight: bold;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        color: #fff;
+        font: bold 28px "Roboto Slab";
+        margin: 0 0 32px;
+    }
+
+    .thinkly-age-verification-popup-actions {
+        .thinkly-age-verification-popup-actions-negative {
+            background: none;
+            border: 1.5px solid #FFF;
+            color: #FFF;
+            font-size: 16px;
+            margin-right: 8px;
+            opacity: 0.4;
+
+            &:hover {
+                color: #FFF;
+                opacity: 0.6;
+            }
+        }
+
+        .thinkly-age-verification-popup-actions-positive {
+            background: $sw-color-brand-primary;
+            color: #FFF;
+            font-size: 16px;
+
+            &:hover {
+            }
+        }
+    }
+}
+
+.thinkly-age-verification-scroll-locked {
+    &:before {
+        content: '';
+        display: block;
+        background: rgba(0,0,0,0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 8000;
+    }
+}

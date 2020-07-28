@@ -1,0 +1,79 @@
+.product-box {
+    text-align: center;
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        height: 208px;
+
+        .product-name {
+            flex-shrink: 0;
+            font: bold 20px $sw-font-family-headline;
+            height: auto;
+            margin: 8px 0;
+            text-transform: uppercase;
+        }
+
+        .product-description {
+            flex-grow: 2;
+            font: normal 14px $sw-font-family-base;
+            color: #888;
+            margin: 0 0 8px;
+            height: 3.5rem;
+        }
+    }
+
+    .product-rating {
+        display: none;
+    }
+
+    .product-price-unit {
+        display: none;
+    }
+
+    .product-price {
+        color: $sw-color-price;
+        font: bold 20px "Roboto Slab";
+        height: auto;
+        margin: 0 0 8px;
+    }
+
+    .product-action {
+        margin-top: 12px;
+    }
+
+    .btn-buy {
+        background: transparent;
+        color: #000;
+
+        .cart.icon {
+            background: url("/bundles/padreazultheme/cart.svg") no-repeat center;
+        }
+
+        .size.icon {
+            background: url("/bundles/padreazultheme/size.svg") no-repeat center;
+        }
+
+        &:hover {
+            background: #000;
+            color: #fff;
+
+            .cart.icon {
+                background: url("/bundles/padreazultheme/cart-inverted.svg") no-repeat center;
+            }
+
+            .size.icon {
+                background: url("/bundles/padreazultheme/size-inverted.svg") no-repeat center;
+            }
+        }
+    }
+
+    .out-of-stock {
+        margin: auto;
+        height: 44px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 24px rgba(0,0,0,0.1);
+    }
+}

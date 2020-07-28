@@ -1,0 +1,11 @@
+{% block element_html %}
+    <div class="cms-element-html">
+        <style>
+            {{ element.config.css.value|raw }}
+        </style>
+        {{ element.config.html.value|raw }}
+        <script>
+            {{  element.config.js.value|raw }}
+        </script>
+    </div>
+{% endblock %}

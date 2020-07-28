@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/storefront/component/listing/breadcrumb.html.twig' %}
+
+{% block component_listing_breadcrumb %}
+    {% set breadcrumb = category.buildSeoBreadcrumb(context.salesChannel.navigationCategoryId) %}
+
+    {% if breadcrumb|length > 0 %}
+    <a class="btn btn-back" href="{{ path('frontend.home.page') }}">
+        <i class="arrow-left icon"></i> Go Back
+    </a>
+    {% endif %}
+{% endblock %}

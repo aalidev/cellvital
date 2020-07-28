@@ -1,0 +1,9 @@
+.sw-cms-preview-four-column {
+    padding: 15px;
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+}

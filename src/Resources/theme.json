@@ -1,0 +1,21 @@
+{
+  "name": "PadreAzulTheme",
+  "author": "Thinkly",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@PadreAzulTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/padre-azul-theme.js"
+  ],
+  "asset": [
+    "app/storefront/src/assets"
+  ]
+}

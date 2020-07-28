@@ -1,0 +1,45 @@
+.btn {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+}
+
+.btn-buy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .cart.icon {
+        background: url("/bundles/padreazultheme/cart-inverted.svg") no-repeat center;
+    }
+}
+
+.btn-buy.btn-buy-gold {
+    background: $sw-color-brand-primary;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+
+    &:hover {
+        box-shadow: 0 0 8px $sw-color-brand-primary;
+    }
+}
+
+.btn-back {
+    display: flex;
+    font-weight: normal;
+    font-size: 16px !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        margin-right: 8px;
+    }
+}

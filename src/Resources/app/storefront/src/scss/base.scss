@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import "components/btn.scss";
+@import "components/icons";
+@import "components/header";
+@import "components/footer.scss";
+@import "components/mail-link";
+@import "components/product-box";
+@import "components/age-verification";
+@import "components/product-feature-list";
+@import "components/product-property-label";
+@import "components/product-detail-cross-selling-tabs";
+@import "components/top-bar";
+@import "components/subshop-switch-modal";
+@import "components/_cms-block-image-four-column.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header-logo-main-link {
+    background: url("/bundles/padreazultheme/logo-black.png") no-repeat left center;
+    background-size: contain;
+    width: 144px;
+    height: 50px;
+}
+
+.header-main {
+    .header-row {
+        box-sizing: border-box;
+        height: 112px;
+        padding: 0;
+
+        .header-logo-main-img {
+            display: block;
+            height: 48px;
+        }
+    }
+}
+
+h2.block-heading {
+    font-size: 56px;
+    padding: 80px 0 16px;
+    text-align: center;
+}
+
+.header-minimal {
+    .header-row {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .header-minimal-contact {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.main-navigation-menu {
+    justify-content: center;
+
+    .main-navigation-link {
+        color: transparentize(#000, 0.5);
+        font-family: 'Roboto Slab';
+        font-weight: bold;
+        padding: 0 16px;
+
+        .main-navigation-link-text {
+            border: none;
+            font-size: 16px;
+        }
+
+        &.active {
+            color: #000;
+        }
+    }
+}
+
+.product-detail-media {
+    .gallery-slider-row {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        .gallery-slider {
+            height: 100%;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .gallery-slider-row {
+            position: static;
+        }
+    }
+}
+
+.product-detail-content {
+    margin-bottom: 0;
+
+    .col-lg-5.product-detail-buy {
+        box-sizing: border-box;
+        padding-right: 48px;
+    }
+}
+
+.product-detail-manufacturer {
+    display: none;
+}
+
+.product-detail-price-unit {
+    display: none;
+}
+
+.product-detail-headline {
+    margin-bottom: 24px;
+    margin-top: 32px;
+
+    .product-detail-name-container {
+        padding: 0;
+
+        h1 {
+            color: #000;
+            font-size: 36px;
+            font-family: "Roboto Slab";
+            text-transform: uppercase;
+        }
+    }
+}
+
+.product-detail-award {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 180px;
+    height: 180px;
+    z-index: 5;
+}
+
+.product-detail-buy {
+    .product-detail-description-text {
+        color: rgba(0,0,0,0.5);
+        font-size: 16px;
+    }
+
+    .product-detail-price-container {
+        .product-detail-price {
+            color: $sw-color-brand-primary;
+            font-family: "Roboto Slab";
+            font-size: 28px;
+        }
+    }
+
+    .product-detail-tax-link {
+        color: $sw-color-brand-primary;
+        text-decoration: underline;
+    }
+
+    .product-detail-form-container {
+        margin: 48px 0 8px;
+    }
+
+    .product-detail-package-info {
+        color: rgba(0,0,0,0.5);
+    }
+}
+
+@media (max-width: 991px) {
+    .product-detail-content {
+        .col-lg-5.product-detail-buy {
+            padding-right: 20px;
+        }
+
+        .product-detail-award {
+            left: auto;
+            right: 16px;
+            transform: none;
+            top: 120px;
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .product-detail-content {
+        .col-lg-5.product-detail-buy {
+            padding-right: 20px;
+        }
+
+        .product-detail-award {
+            left: auto;
+            right: 16px;
+            transform: none;
+            top: 120px;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .product-detail-buy, .product-detail-headline {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .btn-back {
+        margin-left: -20px;
+    }
+
+    .product-detail-award {
+        width: 200px;
+        height: 200px;
+    }
+}

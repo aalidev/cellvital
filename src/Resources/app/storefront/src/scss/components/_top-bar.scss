@@ -1,0 +1,26 @@
+.top-bar-wrapper {
+    background: #000;
+    color: #fff;
+    font-family: $sw-font-family-base;
+    font-size: 14px;
+
+    .top-bar-nav-btn {
+        color: #fff;
+        font-family: $sw-font-family-base;
+        font-size: 14px;
+    }
+
+    .top-bar-nav-btn:hover {
+        color: #FFF;
+        text-shadow: 0 0 0 8px rgba(255,255,255,0.8);
+    }
+
+    .dropdown-toggle {
+        &:after {
+            background: url("/bundles/padreazultheme/angle-down.svg") no-repeat center;
+            border: none;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

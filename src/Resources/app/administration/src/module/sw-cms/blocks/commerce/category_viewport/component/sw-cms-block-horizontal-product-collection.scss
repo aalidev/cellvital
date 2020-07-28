@@ -1,0 +1,7 @@
+.sw-cms-block-horizontal-product-collection {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+}

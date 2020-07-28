@@ -1,0 +1,40 @@
+{% block sw_cms_el_config_html %}
+    <div class="sw-cms-el-config-html">
+        <sw-tabs class="sw-cms-el-config-text__tabs" defaultItem="html">
+            <template slot-scope="{ active }" >
+                <sw-tabs-item name="html" :activeTab="active">HTML</sw-tabs-item>
+                <sw-tabs-item name="css" :activeTab="active">CSS</sw-tabs-item>
+                <sw-tabs-item name="js" :activeTab="active">JS</sw-tabs-item>
+            </template>
+
+            <template slot="content" slot-scope="{ active }">
+                <sw-container v-if="active === 'html'">
+                    <sw-code-editor
+                        v-model="element.config.html.value"
+                        completionMode="text"
+                        mode="twig"
+                        type="text">
+                    </sw-code-editor>
+                </sw-container>
+
+                <sw-container v-if="active === 'css'">
+                    <sw-code-editor
+                        v-model="element.config.css.value"
+                        completionMode="text"
+                        mode="twig"
+                        type="text">
+                    </sw-code-editor>
+                </sw-container>
+
+                <sw-container v-if="active === 'js'">
+                    <sw-code-editor
+                        v-model="element.config.js.value"
+                        completionMode="text"
+                        mode="twig"
+                        type="text">
+                    </sw-code-editor>
+                </sw-container>
+            </template>
+        </sw-tabs>
+    </div>
+{% endblock %}
